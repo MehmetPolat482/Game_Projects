@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: e1a536f74c7ef384a8d7132148ace0c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: StartButton
+  - first:
+      213: 21300002
+    second: MissionsIcon
+  - first:
+      213: 21300004
+    second: StoreIcon
+  - first:
+      213: 21300006
+    second: Settings
+  - first:
+      213: 21300008
+    second: LeaderboardIcon
+  - first:
+      213: 21300010
+    second: WorkHat
+  - first:
+      213: 21300012
+    second: FancyHat
+  - first:
+      213: 21300014
+    second: PartyHat
+  - first:
+      213: 21300016
+    second: PowerUpStar
+  - first:
+      213: 21300018
+    second: PowerUpHeart
+  - first:
+      213: 21300020
+    second: PowerUpMagnet
+  - first:
+      213: 21300022
+    second: PowerUpScoreMult
+  - first:
+      213: 21300024
+    second: CloseButton
+  - first:
+      213: 21300026
+    second: WorkerHat
+  - first:
+      213: 21300028
+    second: MagnetPowerup
+  - first:
+      213: 21300030
+    second: MultiplierPowerup
+  - first:
+      213: 21300032
+    second: InvicibilityPowerup
+  - first:
+      213: 21300034
+    second: LifePowerup
+  - first:
+      213: 21300036
+    second: DayPreview
+  - first:
+      213: 21300038
+    second: NightPreview
+  - first:
+      213: 21300040
+    second: Background
+  - first:
+      213: 21300042
+    second: Leaderboard
+  - first:
+      213: 21300044
+    second: Shop
+  - first:
+      213: 21300046
+    second: Missions
+  - first:
+      213: 21300048
+    second: PauseButton
+  - first:
+      213: 21300050
+    second: LifeHeart
+  - first:
+      213: 21300052
+    second: TimeBar
+  - first:
+      213: 21300054
+    second: CatIcone
+  - first:
+      213: 21300056
+    second: RacoonIcone
+  - first:
+      213: 21300058
+    second: ActivePowerUpBackground
+  - first:
+      213: 21300060
+    second: PremiumIcone
+  - first:
+      213: 21300062
+    second: FishboneIcone
+  - first:
+      213: 21300064
+    second: GameUIBackground
+  - first:
+      213: 21300066
+    second: PauseMenu
+  - first:
+      213: 21300068
+    second: PauseResume
+  - first:
+      213: 21300070
+    second: NoItem
+  - first:
+      213: 21300072
+    second: HandleSlider
+  - first:
+      213: 21300074
+    second: SliderBG
+  - first:
+      213: 21300076
+    second: SettingIcone
+  - first:
+      213: 21300078
+    second: ArrowButtonDefault
+  - first:
+      213: 21300080
+    second: ArrowButtonShadow
+  - first:
+      213: 21300082
+    second: ArrowButtonGrey
+  - first:
+      213: 21300084
+    second: UIBorderFilled01
+  - first:
+      213: 21300086
+    second: UIBorderFilledRed
+  - first:
+      213: 21300088
+    second: UISliderBG
+  - first:
+      213: 21300090
+    second: UISliderFill
+  - first:
+      213: 21300092
+    second: UIButtonOrange
+  - first:
+      213: 21300094
+    second: UIButtonNoShadow
+  - first:
+      213: 21300096
+    second: UIButtonBG
+  - first:
+      213: 21300098
+    second: UIButton
+  - first:
+      213: 21300100
+    second: UIButtonOrangeNoShadow
+  - first:
+      213: 21300102
+    second: UIBorderFilledOrange
+  - first:
+      213: 21300104
+    second: UIBorderLightGrey
+  - first:
+      213: 21300106
+    second: StartButtonPressed
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MultiplierPowerup
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 379
+        width: 120
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InvicibilityPowerup
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 378
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeBar
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 396
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UISliderFill
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 492
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 4, z: 3, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3a53a7f374557524494a14a5c4344aa8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WorkerHat: 21300026
+      PartyHat: 21300014
+      SliderBG: 21300074
+      MagnetPowerup: 21300028
+      ArrowButtonShadow: 21300080
+      ArrowButtonDefault: 21300078
+      RacoonIcone: 21300056
+      UIButtonBG: 21300096
+      UISpritesheet_0: -1996972472
+      UIBorderLightGrey: 21300104
+      LifePowerup: 21300034
+      FishboneIcone: 21300062
+      MultiplierPowerup: 21300030
+      PauseResume: 21300068
+      MissionsIcon: 21300002
+      Shop: 21300044
+      Background: 21300040
+      CatIcone: 21300054
+      UIButtonNoShadow: 21300094
+      Settings: 21300006
+      StartButton: 21300000
+      Leaderboard: 21300042
+      LifeHeart: 21300050
+      NoItem: 21300070
+      HandleSlider: 21300072
+      UISliderBG: 21300088
+      PauseMenu: 21300066
+      InvicibilityPowerup: 21300032
+      UISliderFill: 21300090
+      PremiumIcone: 21300060
+      TimeBar: 21300052
+      UIButtonOrangeNoShadow: 21300100
+      ActivePowerUpBackground: 21300058
+      UIBorderFilled01: 21300084
+      CloseButton: 21300024
+      ArrowButtonGrey: 21300082
+      PauseButton: 21300048
+      DayPreview: 21300036
+      StoreIcon: 21300004
+      UIBorderFilledRed: 21300086
+      UIButtonOrange: 21300092
+      SettingIcone: 21300076
+      Missions: 21300046
+      UIBorderFilledOrange: 21300102
+      NightPreview: 21300038
+      UIButton: 21300098
+      GameUIBackground: 21300064
+      FancyHat: 21300012
+      LeaderboardIcon: 21300008
+      StartButtonPressed: 21300106
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

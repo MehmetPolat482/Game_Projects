@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PositionObstacle : MonoBehaviour
+{
+    public float min;
+    public float max;
+	public float direction ;
+	[SerializeField]
+	private float force =5.0f ;
+    // Use this for initialization
+    void Start () {
+       
+        min=transform.position.x;
+        max=transform.position.x+2;
+   
+    }
+   
+    // Update is called once per frame
+    void Update () {
+       
+       
+        transform.position =new Vector3(direction * Mathf.PingPong(Time.time*1,max-min)+min, transform.position.y, transform.position.z);
+       
+    }
+	private void  OnCollisionEnter(Collision collision){
+		if(collision.gameObject.CompareTag("Enemy")){
+			
+			Rigidbody enemyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+			Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position);
+			enemyRigidbody.AddForce(awayFromPlayer * force , ForceMode.Impulse);
+			
+		}
+}

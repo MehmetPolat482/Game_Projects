@@ -1,0 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerCpManager : MonoBehaviour
+{
+	public int playerNumber ;
+   public int cpCrossed = 0;
+   public int playerPosition;
+   
+   public RaceManager raceManager;
+   
+   private void OnTriggerEnter(Collider other){
+	   
+	   if(other.gameObject.CompareTag("CP")){
+		   
+		   cpCrossed += 1;
+		   
+		   raceManager.PlayerCollectedCp(playerNumber , cpNumber);
+	   }
+   }
+}

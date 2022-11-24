@@ -1,0 +1,72 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class CharacterController : MonoBehaviour
+{
+	
+     private Rigidbody rb;
+	[SerializeField] private GameObject wall;
+	public bool gameOver = false;
+	public bool inTouch = false;
+    bool right;
+    bool left ;
+    float speed = 1.5f;
+	Animator playerAnim;
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+		playerAnim = GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		if(gameOver == false){
+			    transform.Translate( 0,0,speed * Time.deltaTime);
+		}
+    
+
+        Vector3 right_turn = new Vector3(1f ,transform.position.y,transform.position.z);
+        Vector3 left_turn = new Vector3(-1f ,transform.position.y,transform.position.z);
+		
+		if(inTouch == false){
+			
+			if(Input.touchCount > 0){
+
+            Touch finger = Input.GetTouch(0);
+
+            if(finger.deltaPosition.x > 50.0f){
+
+                right = true;
+                left  = false ;
+            }
+            if(finger.deltaPosition.x < -50.0f){
+
+                right = false;
+                left  = true ;
+            }
+            if(right == true){
+                transform.position = Vector3.Lerp(transform.position , right_turn , 4*Time.deltaTime);
+            }
+             if(left == true){
+                transform.position = Vector3.Lerp(transform.position , left_turn , 4*Time.deltaTime);
+            }
+        }
+		}
+        
+	}
+	
+	private void OnTriggerEnter(Collider other){
+		if(other.CompareTag("Wall")){
+			gameOver=true;
+			inTouch = true;
+			playerAnim.SetBool("Win_b" , true);
+			wall.gameObject.SetActive(true);
+		}
+    }
+	
+}
+

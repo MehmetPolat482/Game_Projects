@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
+
+public class AudioSourceScript : MonoBehaviour
+{
+	public AudioSource audioSource;
+	private bool isOn;
+
+
+	public void SetMusic(bool isMusic){
+		audioSource.mute = !isMusic;
+	}
+	
+	public void SetSound(bool onMusic){
+		if(onMusic){
+			
+			audioSource.mute = !audioSource.mute;
+		}
+	}
+	
+	
+}

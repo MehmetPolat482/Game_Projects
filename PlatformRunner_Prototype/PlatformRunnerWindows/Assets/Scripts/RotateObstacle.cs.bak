@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RotateObstacle : MonoBehaviour
+{
+    [SerializeField]
+	private float rotatingDirectionZ;
+	[SerializeField]
+	private float rotatingDirectionY;
+	[SerializeField]
+	private float force =10.0f ;
+
+    // Update is called once per frame
+    void Update()
+    {
+          transform.Rotate(0,rotatingDirectionY,rotatingDirectionZ);
+    }
+	
+	private void  OnCollisionEnter(Collision collision){
+		if(collision.gameObject.CompareTag("Enemy")){
+			
+			Rigidbody enemyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+			Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position);
+			enemyRigidbody.AddForce(awayFromPlayer * force , ForceMode.Impulse);
+			
+		}
+}
+}

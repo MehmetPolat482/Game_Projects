@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b278e16212ba06345947e8a923e72840, type: 3}
+  m_Name: Ray
+  m_EditorClassIdentifier: 
+  nameCube: RAY
+  value: 15
+  ID: -30064
+  sound_Cube: {fileID: -6344690186524537004, guid: 3566d0297b200f84bbf8bf3307cc0b0e, type: 3}
+  sound_Clip: {fileID: 8300000, guid: 06a85a5465064cc4a9bc4bcb24f7a3b4, type: 3}

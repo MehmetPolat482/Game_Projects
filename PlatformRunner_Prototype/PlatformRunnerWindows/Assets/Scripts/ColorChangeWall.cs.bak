@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ColorChangeWall : MonoBehaviour
+{
+	[SerializeField] private Material myMaterial;
+	public MeshRenderer rend;
+    // Start is called before the first frame update
+    void Start()
+    {
+        rend=GetComponent<MeshRenderer>();
+		rend.enabled = true;
+    }
+
+	void Update(){
+		
+		 if(Input.touchCount > 0){
+			 
+			 Touch finger = Input.GetTouch(0);
+			  
+			if(finger.phase == TouchPhase.Began){
+				 ChangeColor();
+			}
+		 }
+	}
+	
+	void ChangeColor(){
+		rend.material.color = Random.ColorHSV();
+	}
+}

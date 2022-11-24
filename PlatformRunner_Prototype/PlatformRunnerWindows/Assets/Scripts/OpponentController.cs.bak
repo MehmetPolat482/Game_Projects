@@ -1,0 +1,68 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+
+public class OpponentController : MonoBehaviour
+{
+    private Rigidbody rb;
+	public Transform goal ;
+	[SerializeField] private Transform player;
+	public bool gameOver = false;
+	Animator playerAnim;
+    public float speed;
+    // Start is called before the first frame update
+    void Start()
+    {
+		NavMeshAgent agent = GetComponent<NavMeshAgent>();
+		playerAnim = GetComponent<Animator>();
+		agent.destination = goal.position;
+        rb = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		if(gameOver == false){
+        transform.Translate(0, 0, speed * Time.deltaTime);
+		}
+		
+    }
+	
+	
+	 private void  OnCollisionEnter(Collision collision){
+		if(collision.gameObject.CompareTag("Obstacle")){
+			
+			
+			StartCoroutine(EnemyCountdownRoutine());
+		}
+	} 
+	IEnumerator EnemyCountdownRoutine () {
+		
+		yield return new  WaitForSecondsRealtime(2f);
+		Instantiate( player,new Vector3(0f, 1.5f, 0f),Quaternion.identity);
+		Destroy(gameObject);
+		
+	}
+	
+	private void OnTriggerEnter(Collider other){
+		
+		if(other.CompareTag("Wall")){
+			playerAnim.SetBool("Win_b" , true);
+			gameOver=true;
+		}
+		if(other.CompareTag("DieWall")){
+			
+			
+			StartCoroutine(GameOverCountdownRoutine()) ;
+		}
+		
+	}
+	IEnumerator GameOverCountdownRoutine() {
+		yield return new  WaitForSecondsRealtime(2f);
+		Destroy(gameObject);
+
+	}
+
+}

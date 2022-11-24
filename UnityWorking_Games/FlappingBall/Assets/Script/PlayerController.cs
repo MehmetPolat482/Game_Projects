@@ -1,0 +1,62 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerController : MonoBehaviour
+{
+	//Değişkenler
+	public float speed = 5f;
+	private Rigidbody playerRb;
+	private GameObject focalPoint;
+	public bool hasPowerup = false ;
+	private float powerupStrength = 10.0f;
+	public GameObject powerupIndicator ;
+	
+    // Start is called before the first frame update
+    void Start()
+    {
+		playerRb =GetComponent<Rigidbody>();
+		focalPoint = GameObject.Find("FocalPoint");
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		float forwardInput = SimpleInput.GetAxis("Vertical");
+        
+		playerRb.AddForce(focalPoint.transform.forward * forwardInput * speed);
+		
+		powerupIndicator.transform.position = transform.position + new Vector3(0 , -0.5f , 0);
+		
+		if(playerRb.position.y < -10){
+			SceneManager.LoadScene("GameOverScene");
+		}
+    }
+	//Çarpışma Anında Güç Elmasının Tepkisi
+	private void OnTriggerEnter(Collider other) {
+		if(other.CompareTag("Powerup") ){
+			Destroy(other.gameObject);
+			hasPowerup = true ;
+			StartCoroutine(PowerupCountdownRoutine());
+		}
+	}
+	//Çarpışma Anında Güç Elmasının Ne Kadar Süreyle Etki Etmesi
+	IEnumerator PowerupCountdownRoutine () {
+		powerupIndicator.gameObject.SetActive(true);
+		yield return new  WaitForSecondsRealtime(5f);
+		powerupIndicator.gameObject.SetActive(false);
+		hasPowerup = false ;
+	}
+	// Güç Etkisindeyken Çarpışma Anında Düşmana Olan Tepkime
+	private void  OnCollisionEnter(Collision collision){
+		if(collision.gameObject.CompareTag("Enemy") && hasPowerup){
+			Rigidbody enemyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+			Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position);
+
+			enemyRigidbody.AddForce(awayFromPlayer * powerupStrength , ForceMode.Impulse);
+			
+		}
+	}
+}
