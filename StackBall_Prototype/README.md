@@ -7,4 +7,6 @@ In this game, it is to reach the finish by controlling the ball and breaking the
 
 ![](https://github.com/MehmetPolat482/Game_Projects/blob/1f71ca3ab2a1ddaaf1b1afdbe35799639b3557a0/StackBall_Prototype/Images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC_20221123_154743.png)
 
+![](https://github.com/MehmetPolat482/Game_Projects/blob/adc59bf88fc0b2ea8234471458362bcb78457849/StackBall_Prototype/Images/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC_20221123_154828.png)
+
 ###                                          😉  **HAVE FUN** 😉
