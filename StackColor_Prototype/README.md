@@ -5,7 +5,7 @@ In this game, it is to advance in the game by controlling the character and coll
 
 ![](https://github.com/MehmetPolat482/Game_Projects/blob/8ee1c5833bee5cc5e39e72f96820e31021527a57/StackColor_Prototype/Images/StackColors.png)
 
-![](https://github.com/MehmetPolat482/Game_Projects/blob/8ee1c5833bee5cc5e39e72f96820e31021527a57/StackColor_Prototype/Images/StackColors_2.png)
+![](https://github.com/MehmetPolat482/Game_Projects/blob/8ee1c5833bee5cc5e39e72f96820e31021527a57/StackColor_Prototype/Images/StackColors_1.png)
 
 ![](https://github.com/MehmetPolat482/Game_Projects/blob/8ee1c5833bee5cc5e39e72f96820e31021527a57/StackColor_Prototype/Images/StackColors_3.png)
 
