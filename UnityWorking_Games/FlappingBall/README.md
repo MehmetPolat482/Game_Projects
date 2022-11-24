@@ -16,4 +16,4 @@
 
 * Ayrıca sizi güçlendirecek bir güç elması var .Bunu aldıktan sonra karaktere itme gücü geliyor ve böylece topları daha hızlı adanın dışına itiyorsunuz.
 
-![](https://github.com/MehmetPolat482/AtlamGames_HyperCasual/blob/ae4d93c5265d3209c637ab34298ac8d0cfe35729/FlappingBall/Assets/img/PxLbzK_88b6d6d75bf24213a34148325f3a21b3_00-00-03_00-00-11_2.gif)
+![](https://github.com/MehmetPolat482/Game_Projects/blob/20172d0744af120c9302e8fd80961dc82d6954b3/UnityWorking_Games/FlappingBall/Images/PxLbzK_88b6d6d75bf24213a34148325f3a21b3_00-00-03_00-00-11_2.gif)
